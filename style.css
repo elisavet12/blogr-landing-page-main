@@ -38,8 +38,13 @@
 .editor--info-item {
 }
 .editor--info-item-excerpt {
+  font-size: 0.88rem;
+  color: var(--Very-dark-grayish-blue);
 }
 .editor--info-item-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.55rem;
+  color: var(--Very-dark-blue);
 }
 .editor--photo {
 }
@@ -93,22 +98,29 @@
   flex-direction: column;
 }
 .header--excerpt {
+  font-size: 1.11rem;
+  color: var(--Grayish-blue);
 }
 .header--title {
+  font-size: 3.33rem;
+  color: var(--White);
 }
 .header__main {
 }
 .header__main-info {
+  text-align: center;
 }
 .header__main-info--links {
 }
 .header__main-link {
+  border: 1px black solid;
 }
 .header__main-link-learn {
 }
 .header__main-link-start {
 }
 .header__nav {
+  display: flex;
 }
 .homelink {
 }
@@ -137,10 +149,17 @@
 .main__info {
 }
 .main__info-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.11rem;
+  color: var(--Very-dark-blue);
 }
 .nav {
 }
 .nav--main {
+  display: flex;
+}
+
+.nav--main-btns {
   display: flex;
 }
 .nav__link {
@@ -148,6 +167,26 @@
   display: flex;
   /* flex-direction: column;
   align-items: center; */
+  border: none;
+  background: none;
+}
+
+.nav__link-btn {
+  display: flex;
+}
+
+.nav__link-actions {
+  display: flex;
+}
+
+.nav__link-action {
+}
+
+.nav__link-action-signup {
+  border: 1px black solid;
+}
+
+.nav__link-action-login {
 }
 
 .nav__link:hover .submenu,
@@ -158,8 +197,14 @@
 .phones--info-item {
 }
 .phones--info-item-excerpt {
+  font-size: 1.15rem;
+  color: var(--White);
+  font-weight: 300;
 }
 .phones--info-item-title {
+  font-size: 2.22rem;
+  color: var(--White);
+  font-weight: 600;
 }
 .phones--info-photo {
 }
@@ -174,8 +219,7 @@
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
-  background-image: url(./images/bg-pattern-circles.svg);
-  background-repeat: no-repeat;
+
   /* background: linear-gradient(
     to right,
     var(--Very-dark-gray-blue),
@@ -187,6 +231,9 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-items: center;
+  background-image: url(./images/bg-pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-color: var(--Very-dark-gray-blue);
 }
 .submenu {
   display: none;
@@ -205,6 +252,11 @@
 
 .submenu__link:hover {
   /* opacity: 1; */
+}
+
+span {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 950px) {
