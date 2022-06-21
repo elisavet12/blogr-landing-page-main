@@ -40,6 +40,7 @@
 .editor--info-item-excerpt {
   font-size: 0.88rem;
   color: var(--Very-dark-grayish-blue);
+  width: 48ch;
 }
 .editor--info-item-title {
   font-family: "Ubuntu", sans-serif;
@@ -49,6 +50,9 @@
 .editor--photo {
 }
 .editor--photo-img {
+  width: 124%;
+  max-width: 629px;
+  display: inline;
 }
 .editor--photo-img-mobile {
   display: none;
@@ -63,6 +67,8 @@
   justify-items: center;
   padding-left: 10.3rem;
   padding-right: 10.3rem;
+  padding-bottom: 4.75rem;
+  padding-top: 4.75rem;
 }
 .footer-logo {
 }
@@ -122,6 +128,10 @@
   font-size: 3.33rem;
   color: var(--White);
 }
+
+.header--excerpt {
+  margin-bottom: 2.93rem;
+}
 .header__main {
   margin-top: 9rem;
   /* margin-bottom: 9rem; */
@@ -132,12 +142,39 @@
 }
 .header__main-info--links {
 }
-.header__main-link {
-  border: 1px black solid;
+.header__main-link,
+.nav__link-action-signup {
+  border: 1px var(--White) solid;
+  border-radius: 24px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-decoration: none;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
 }
 .header__main-link-learn {
+  background-color: var(--Light-red);
+  color: var(--White);
 }
-.header__main-link-start {
+
+.header__main-link-learn:hover {
+  background-color: var(--White);
+  color: var(--Light--red);
+  border: none;
+}
+
+.header__main-link-start,
+.nav__link-action-signup {
+  background-color: var(--White);
+  color: var(--Light-red);
+  border: none;
+}
+
+.header__main-link-start:hover {
+  background-color: var(--Very-light-red);
+  color: var(--White);
 }
 .header__nav {
   /* display: flex; */
@@ -221,7 +258,17 @@
 }
 
 .nav__link-action-signup {
-  border: 1px black solid;
+  background-color: var(--White);
+  color: var(--Light-red);
+  border: none;
+  width: 136px;
+  text-align: center;
+  display: inline;
+}
+
+.nav__link-action-signup:hover {
+  background-color: var(--Very-light-red);
+  color: var(--White);
 }
 
 .nav__link-action-login {
@@ -256,7 +303,8 @@
   justify-items: center;
   align-items: center;
   padding-left: 10.3rem;
-  padding-right: 10.3rem;
+  /* padding-right: 10.3rem; */
+  gap: 7.93rem;
 }
 .section__laptop {
   display: grid;
