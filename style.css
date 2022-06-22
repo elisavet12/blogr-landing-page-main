@@ -34,6 +34,9 @@
   display: none;
 }
 .editor--info {
+  display: flex;
+  flex-direction: column;
+  gap: 5.25rem;
 }
 .editor--info-item {
 }
@@ -46,6 +49,7 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 1.55rem;
   color: var(--Very-dark-blue);
+  margin-bottom: 2.25rem;
 }
 .editor--photo {
 }
@@ -69,6 +73,7 @@
   padding-right: 10.3rem;
   padding-bottom: 4.75rem;
   padding-top: 4.75rem;
+  border-top-right-radius: 100px;
 }
 .footer-logo {
 }
@@ -123,10 +128,13 @@
   color: var(--Grayish-blue);
   margin-top: 1.62rem;
   margin-bottom: 3.24rem;
+  border-bottom-left-radius: 100px;
 }
 .header--title {
   font-size: 3.33rem;
   color: var(--White);
+  width: 24ch;
+  display: inline-block;
 }
 
 .header--excerpt {
@@ -135,6 +143,9 @@
 .header__main {
   margin-top: 9rem;
   /* margin-bottom: 9rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .header__main-info {
@@ -180,6 +191,10 @@
   /* display: flex; */
 }
 .homelink {
+}
+
+.homelink-mobile {
+  display: none;
 }
 .laptop--info {
 }
@@ -284,18 +299,28 @@
 }
 
 .phones--info-item {
+  margin-top: 6.87rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .phones--info-item-excerpt {
   font-size: 1.15rem;
   color: var(--White);
   font-weight: 300;
+  width: 49ch;
 }
 .phones--info-item-title {
   font-size: 2.22rem;
   color: var(--White);
   font-weight: 600;
+  margin-bottom: 2.25rem;
 }
 .phones--info-photo {
+  position: relative;
+  top: -36px;
+  width: 100%;
+  max-width: 552px;
 }
 .section__editor {
   display: grid;
@@ -320,17 +345,23 @@
     var(--Very-dark-desaturated-blue)
   ); */
 }
+
 .section__phones {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  align-items: center;
+  align-items: start;
   justify-items: center;
+  gap: 2rem;
   background-image: url(./images/bg-pattern-circles.svg);
   background-repeat: no-repeat;
   background-color: var(--Very-dark-gray-blue);
   padding-left: 10.3rem;
   padding-right: 10.3rem;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  max-height: 396px;
 }
+
 .submenu {
   display: none;
   position: absolute;
@@ -370,7 +401,7 @@ span:hover {
   cursor: pointer;
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1050px) {
   .burger {
     display: inline-block;
     background-color: transparent;
@@ -381,6 +412,28 @@ span:hover {
     display: inline-block;
     background-color: var(--Black);
     border: none;
+  }
+
+  .header {
+    margin-bottom: 5.75rem;
+  }
+
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header--title {
+    width: 14ch;
+  }
+
+  .homelink-mobile {
+    display: block;
+  }
+
+  .main__info-title {
+    margin-bottom: 2.5rem;
   }
   .nav--main {
     display: none;
@@ -414,4 +467,51 @@ span:hover {
     justify-content: flex-end;
     gap: 8rem;
   }
+
+  .phones--info-item {
+    align-items: center;
+
+    margin-top: 0;
+  }
+
+  .phones--info-item-excerpt {
+    width: 36ch;
+  }
+
+  .phones--info-item-title {
+    width: 24ch;
+  }
+
+  .section__editor {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    align-content: center;
+    padding-right: 10.3rem;
+    gap: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .section__phones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: none;
+  }
+
+  .editor--info {
+    text-align: center;
+    gap: 3rem;
+  }
+
+  .editor--photo-img {
+    display: none;
+  }
+
+  .editor--photo-img-mobile {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 900px) {
 }
