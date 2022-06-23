@@ -197,16 +197,26 @@
   display: none;
 }
 .laptop--info {
+  padding-right: 10.3rem;
 }
 .laptop--info-item {
 }
 .laptop--info-item-excerpt {
+  color: var(--Very-dark-grayish-blue);
+  width: 49ch;
 }
 .laptop--info-item-title {
+  font-size: 1.75rem;
+  color: var(--Very-dark-blue);
+  margin-bottom: 2.25rem;
 }
 .laptop--photo {
 }
 .laptop--photo-img {
+  width: 100%;
+  max-width: 712px;
+  position: relative;
+  right: 203px;
 }
 .laptop--photo-img-mobile {
   display: none;
@@ -334,10 +344,12 @@
 .section__laptop {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  justify-items: start;
   align-items: center;
-  padding-left: 10.3rem;
-  padding-right: 10.3rem;
+  /* padding-left: 10.3rem;
+  padding-right: 10.3rem; */
+  margin-bottom: 7.5rem;
+  margin-top: 7.5rem;
 
   /* background: linear-gradient(
     to right,
@@ -414,6 +426,22 @@ span:hover {
     border: none;
   }
 
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer__category {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .footer__logo {
+    margin-bottom: 4.25rem;
+  }
+
   .header {
     margin-bottom: 5.75rem;
   }
@@ -470,7 +498,7 @@ span:hover {
 
   .phones--info-item {
     align-items: center;
-
+    text-align: center;
     margin-top: 0;
   }
 
@@ -497,6 +525,21 @@ span:hover {
     flex-direction: column;
     align-items: center;
     max-height: none;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    align-items: start; */
+  }
+
+  .section__laptop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    /* padding-left: 10.3rem;
+    padding-right: 10.3rem; */
+    margin-left: 10.3rem;
+    margin-right: 10.3rem;
   }
 
   .editor--info {
@@ -511,6 +554,19 @@ span:hover {
   .editor--photo-img-mobile {
     display: inline-block;
   }
+}
+
+.laptop--photo-img {
+  display: none;
+}
+
+.laptop--photo-img-mobile {
+  display: inline;
+}
+
+.laptop--info {
+  padding-right: 0;
+  text-align: center;
 }
 
 @media (max-width: 900px) {
