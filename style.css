@@ -46,7 +46,6 @@
   width: 48ch;
 }
 .editor--info-item-title {
-  font-family: "Ubuntu", sans-serif;
   font-size: 1.55rem;
   color: var(--Very-dark-blue);
   margin-bottom: 2.25rem;
@@ -319,6 +318,7 @@
   color: var(--White);
   font-weight: 300;
   width: 49ch;
+  margin-bottom: 6.37rem;
 }
 .phones--info-item-title {
   font-size: 2.22rem;
@@ -456,6 +456,10 @@ span:hover {
     width: 14ch;
   }
 
+  /* .homelink {
+    display: none;
+  } */
+
   .homelink-mobile {
     display: block;
   }
@@ -486,7 +490,6 @@ span:hover {
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
-    background-color: var(--Black);
     color: var(--White);
     align-items: stretch;
     font-size: 28px;
@@ -494,6 +497,20 @@ span:hover {
     flex-direction: column-reverse;
     justify-content: flex-end;
     gap: 8rem;
+    opacity: 0.5;
+    background-color: aqua;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr; */
+  }
+
+  .nav--main-btns {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nav--main-left {
+    flex-direction: column;
   }
 
   .phones--info-item {
@@ -570,4 +587,59 @@ span:hover {
 }
 
 @media (max-width: 900px) {
+  .editor--info-item-title {
+    font-size: 1.56rem;
+    width: 16ch;
+    display: inline-block;
+  }
+
+  .editor--info-item-excerpt {
+    width: 30ch;
+  }
+
+  .header {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .header--title {
+    font-size: 1.87rem;
+  }
+
+  .main__info-title {
+    font-size: 1.37rem;
+  }
+
+  .laptop--info-item-excerpt {
+    width: 29ch;
+  }
+
+  .phones--info-item-title {
+    width: 18ch;
+    font-size: 1.65rem;
+  }
+
+  .phones--info-item-excerpt {
+    font-size: 0.93rem;
+    width: 29ch;
+  }
+
+  .section__phones {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-bottom: 5.5rem;
+  }
+
+  .section__laptop {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin: 0;
+    margin-bottom: 5.5rem;
+  }
+
+  .section__editor {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-bottom: 11rem;
+  }
 }
